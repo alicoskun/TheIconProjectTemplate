@@ -1,0 +1,70 @@
+.App {
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+    font-size: 14px;
+    color: #434445;
+    background-color: #fff;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  color: white;
+}
+
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.navbar .nav>li {
+  display: block;
+  float: left;
+}
+
+.navbar .nav.pull-right {
+  float: right;
+}
+
+.navbar .navbar-inner {
+  background: #232328;
+  padding: 0 5px;
+  border-radius: 0;
+}
+
+.navbar .navbar-inner .navbar-item>a {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  display: inline-block;
+  color: #cdcfd3;
+}
+
+.navbar .navbar-inner .navbar-item>a:hover {
+  background: 0 0;
+  color: #fff;
+}
+
+.navbar .nav>li>a {
+  float: none;
+  padding: 5px 10px 7px;
+  line-height: 19px;
+  color: #dbdcdf;
+  text-decoration: none;
+}
+
+.navbar .nav>li>a:hover {
+  background-color: #2d2d32;
+  color: #fff;
+  text-decoration: none;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
