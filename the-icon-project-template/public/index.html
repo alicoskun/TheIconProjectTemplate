@@ -47,28 +47,43 @@
     window.onscroll = function () { showHideNavbar() };
 
     function showHideNavbar() {
+
+      if (window.innerWidth < 992) {
+        // dettach navbar from top
+        document.getElementsByTagName("nav")[0].className
+            = document.getElementsByTagName("nav")[0].className.replace(' fixed-top', '');
+        return;
+      }
+      else {
+        if (document.getElementsByTagName("nav")[0].className.indexOf(' fixed-top') === -1) {
+          // hide search input
+          document.getElementsByClassName('nav-search')[0].className
+            = document.getElementsByClassName('nav-search')[0].className.replace(' d-block', '');
+        }
+      }
+
       var bottomElement = document.getElementsByClassName("jumbotron")[0].getBoundingClientRect().bottom;
 
-      if (bottomElement <= 20 && bottomElement >= -100) {
+      if (bottomElement <= 20 && bottomElement >= -1000) {
         if (document.getElementsByTagName("nav")[0].className.indexOf(' fixed-top') === -1) {
           // attach navbar to top
           document.getElementsByTagName("nav")[0].className += " fixed-top";
           // show search input
           document.getElementsByClassName('nav-search')[0].className += " d-block";
-          document.getElementsByClassName('nav-search')[0].className
-          = document.getElementsByClassName('nav-search')[0].className.replace(' d-none', '');
-        }        
+          //document.getElementsByClassName('nav-search')[0].className
+          //  = document.getElementsByClassName('nav-search')[0].className.replace(' d-none', '');
+        }
       }
       else if (bottomElement > 20) {
         if (document.getElementsByTagName("nav")[0].className.indexOf(' fixed-top') !== -1) {
           // dettach navbar from top
           document.getElementsByTagName("nav")[0].className
             = document.getElementsByTagName("nav")[0].className.replace(' fixed-top', '');
-          
+
           // hide search input
           document.getElementsByClassName('nav-search')[0].className
             = document.getElementsByClassName('nav-search')[0].className.replace(' d-block', '');
-          document.getElementsByClassName('nav-search')[0].className += " d-none";
+          //document.getElementsByClassName('nav-search')[0].className += " d-none";
         }
       }
     }

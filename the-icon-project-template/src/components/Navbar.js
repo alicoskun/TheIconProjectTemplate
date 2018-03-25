@@ -9,14 +9,14 @@ class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="navbar-brand">
             <div className="form-inline">
               <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" />
               <h5 className="text-light">ICONAREA</h5>
               <div className="nav-search search-input">
                 <div className="input-group">
-                  <input className="form-control py-2  border-0" type="search" placeholder="Search for icons" aria-label="Search" />
+                  <input className="form-control py-2 border-0" type="search" placeholder="Search for icons" aria-label="Search" />
                   <span className="input-group-append">
                     <button className="btn btn-outline-secondary border-0" type="button">
                       <i className="fa fa-search"></i>
