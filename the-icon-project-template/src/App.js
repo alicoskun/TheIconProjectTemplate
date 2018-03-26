@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import IconCard from './components/IconCard';
+import IconSetCard from './components/IconSetCard';
 import './App.css';
 import Clover from './assets/Clover.svg';
 import Daisy from './assets/Daisy.svg';
@@ -80,7 +81,50 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className="asd">
+        <div className="icon-sets">
+          <div className="container">
+            <div className="row d-flex justify-content-center">
+              <div className="col-lg-10">
+                <div className="form-inline">
+                  <h6 className="font-weight-bold">Featured icon sets</h6>
+                  <h6 className="font-weight-light text-muted ml-auto"><a href="#">View more</a></h6>
+                </div>
+                <div className="row">
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                  <div className="col-lg-4">
+                    <IconSetCard name="Flower" iconType="Flat" price="9" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );
