@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import IconCard from './components/IconCard';
 import IconSetCard from './components/IconSetCard';
+import Footer from './components/Footer';
 import './App.css';
 import Clover from './assets/Clover.svg';
 import Daisy from './assets/Daisy.svg';
 import Fuchsia from './assets/Fuchsia.svg';
 import Tulip from './assets/Tulip.svg';
+import logo from './logo.svg';
 
 class App extends Component {
   render() {
@@ -17,7 +19,7 @@ class App extends Component {
           <div className="jumbotron jumbotron-fluid bg-dark">
             <div className="container">
               <div className="title form-inline justify-content-center">
-                <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="70" height="70" alt="" />
+                <img src={logo} width="70" height="70" alt="" />
                 <h1 className="display-4 text-light">ICONAREA</h1>
               </div>
               <div className="search-input d-flex justify-content-center">
@@ -126,6 +128,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

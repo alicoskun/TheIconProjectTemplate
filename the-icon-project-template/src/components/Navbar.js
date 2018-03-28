@@ -4,6 +4,7 @@ import basket from '../assets/basket.svg'
 import envelope from '../assets/envelope.svg'
 import star from '../assets/star.svg'
 import bell from '../assets/bell.svg'
+import logo from '../logo.svg';
 
 class Navbar extends Component {
   render() {
@@ -12,8 +13,10 @@ class Navbar extends Component {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="navbar-brand">
             <div className="form-inline">
-              <img src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" />
-              <h5 className="text-light">ICONAREA</h5>
+              <div className="form-inline logo">
+                <img src={logo} width="30" height="30" alt="" />
+                <h5 className="text-light">ICONAREA</h5>
+              </div>
               <div className="nav-search search-input">
                 <div className="input-group">
                   <input className="form-control py-2 border-0" type="search" placeholder="Search for icons" aria-label="Search" />
