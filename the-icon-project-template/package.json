@@ -2,6 +2,7 @@
   "name": "the-icon-project-template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://alicoskun.github.io/demo/the-icon-project-template",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
