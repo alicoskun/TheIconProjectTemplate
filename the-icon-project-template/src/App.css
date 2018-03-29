@@ -1,11 +1,81 @@
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 367px) {
 
+    .navbar .navbar-brand h5 {
+        display: none;
+    }
+
+    .navbar .navbar-brand .nav-search {
+        margin-left: 15px !important;
+        width: 190px !important;
+    }
+
+    .navbar .navbar-brand .nav-search input {
+        font-size: 14px !important;
+    }
+    
+    .navbar .hidden-collapsed {
+        display: none;
+    }
+
+    .navbar .navbar-toggler {
+        padding: 1px 3px;
+        font-size: 1rem;
+    }
+
+    .jumbotron {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar .navbar-brand h5 {
+        display: none;
+    }
+
+    .navbar .navbar-brand .nav-search {
+        margin-left: 20px;
+        width: 215px;
+    }
+
+    .navbar .navbar-brand .nav-search input {
+        font-size: 15px;
+    }
+    
+    .navbar .navbar-brand div {
+        height: 35px;
+    }
+    
     .navbar .hidden-collapsed {
         display: none;
     }
 
     .jumbotron {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .navbar .hidden-collapsed {
+        display: none;
+    }
+
+    .container-shadow {
+        margin-top: 35px;
+    }
+
+    .jumbotron {
+        display: none;
+    }
+
+    .carousel .col-lg-3 {
+        flex: 0 0 25%;
+    }
+
+    .carousel .col-lg-3 .card img {
+        height: 90px !important;
+        width: 90px !important;
     }
 }
 
@@ -21,6 +91,31 @@
     
     .navbar .nav-search {
         display: none;
+    }
+
+    .icon-sets .iconset-preview {
+        padding: .75rem 2rem !important;
+    }
+
+    .icon-sets .iconset-preview a .row:first-child {
+        margin-bottom: 0 !important;
+    }
+
+    .icon-sets .col-lg-4 {
+        padding: 8px 7px !important;
+    }
+}
+
+@media only screen and (max-width: 1197px) {
+
+    .carousel .col-lg-3 .card img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .icon-sets .iconset-preview img {
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -239,6 +334,7 @@ a:hover {
 
 .icon-sets .col-lg-4 {
     padding: 15px 7px;
+    text-align: center;
 }
 
 .icon-sets .iconset-preview {
