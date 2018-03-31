@@ -4,8 +4,8 @@ class IconCard extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="card">
-                    <a href="#"><img className="card-img-top" src={this.props.src} width="130" height="130" alt="" /></a>
+                <div className={`card ${ this.props.color }`}>
+                    <a href="#"><img className="card-img-top" src={this.props.src} width={130} height={130} alt="" /></a>
                     <div className="card-body">
                         <div className="form-inline">
                             <p className="font-weight-bold"><a href="#" title="">{this.props.name}</a></p>

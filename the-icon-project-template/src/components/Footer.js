@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logoBl from '../logo-bl.svg';
+import './Footer.css'
+import logoBl from '../logo.svg';
 
 class Footer extends Component {
   render() {
@@ -11,7 +12,7 @@ class Footer extends Component {
               <div className="col-lg-10">
                 <div className="form-inline justify-content-center logo">
                   <img src={logoBl} width="30" height="30" alt="" />
-                  <h4>ICONAREA</h4>
+                  <h4>iconarea</h4>
                 </div>
                 <div className="form-inline justify-content-center copyright">
                   <p>Copyright 2018</p>

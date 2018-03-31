@@ -1,0 +1,53 @@
+
+.footer {
+    background-color: rgba(238, 241, 243);
+    border-top: 2px solid #e0e1e4;
+    text-align: left;
+    padding: 40px 0 15px 0;
+}
+
+.footer .form-inline {
+    margin: 1rem 0;
+}
+
+.footer .logo {
+    opacity: .4;
+}
+
+.footer .logo h4 {
+    margin: 0 0 0 5px;
+    font-weight: bold;
+}
+
+.footer .social-media h6 {
+    margin: 0 .5rem;
+    font-weight: bold;
+    opacity: .5;
+}
+
+.footer .social-media h6:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.footer .payment-method a img {
+    width: 25px;
+    margin: 0 .2rem;
+}
+
+.footer .payment-method a p {
+    font-size: 15px;
+    opacity: .5;
+    margin-top: 3px;
+}
+
+.footer .payment-method a p:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.footer .copyright p {
+    opacity: .5;
+    font-size: 13px;
+    margin: 0 .5rem;
+}
