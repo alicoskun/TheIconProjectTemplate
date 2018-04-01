@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import person from '../assets/person.svg'
 import basket from '../assets/basket.svg'
@@ -11,7 +12,7 @@ class Navbar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar fixed-top navbar-expand-lg">
+        <nav className="navbar navbar-light fixed-top navbar-expand-lg">
           <div className="navbar-brand">
             <div className="form-inline">
               <div className="form-inline logo">
@@ -26,16 +27,16 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarToggleContent">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">Home</a>
+                <Link className="nav-link" to='/'>Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                <Link className="nav-link" to="/features">Features</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
+                <Link className="nav-link" to="/pricing">Pricing</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Pro</a>
+                <Link className="nav-link" to="/pro">Pro</Link>
               </li>
             </ul>
             <ul className="navbar-nav ml-auto">

@@ -1,0 +1,111 @@
+.section.gray {
+    background-color: rgba(238, 241, 243, 1);
+    border-top: 2px solid #e0e1e4;
+    padding: 100px 0;
+}
+
+.custom-icons .span12 {
+    margin-bottom: 1.5rem;
+}
+
+.custom-icons .span12 h4 {
+    color: rgba(0, 0, 0, .7);
+}
+
+.custom-icons .carousel {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.custom-icons .carousel .carousel-inner {
+    padding: 5px 0 10px 0;
+}
+
+.custom-icons .carousel .carousel-control-prev,
+.custom-icons .carousel .carousel-control-next {
+    width: 10%;
+}
+
+.custom-icons .carousel .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); 
+}
+
+.custom-icons .carousel .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.custom-icons .carousel .col-lg-3 {
+    padding: 1px;
+}
+
+.custom-icons .card img {
+    margin: 1rem 0;
+}
+
+.custom-icons .carousel .card .card-body {
+    padding: .5rem;
+}
+
+.custom-icons .carousel .card p {
+    margin: 0;
+    line-height: 1;
+}
+
+@media only screen and (max-width: 1197px) {
+
+    .custom-icons .carousel .col-lg-3 .card img {
+        height: 110px;
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .custom-icons .carousel .col-lg-3 {
+        flex: 0 0 25%;
+    }
+
+    .custom-icons .carousel .col-lg-3 .card img {
+        height: 90px;
+        width: 90px;
+    }
+}
+@media only screen and (max-width: 767px) {
+
+    .custom-icons .carousel .col-lg-3 {
+        -ms-flex: 0 0 55%;
+        flex: 0 0 55%;
+    }
+
+    .custom-icons .carousel .col-lg-3 .card {
+        margin: 0;
+    }
+
+    .custom-icons .carousel .col-lg-3 .card img {
+        height: 130px;
+        width: 130px;
+        margin: 2.5rem 0 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .section.gray {
+        padding: 60px 0 70px 0;
+    }
+
+    .custom-icons .carousel .col-lg-3 .card img {
+        height: 90px;
+        width: 90px;
+        margin: 1.5rem 0 .5rem 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .section.gray {
+        padding: 50px 0 60px 0;
+    }
+}

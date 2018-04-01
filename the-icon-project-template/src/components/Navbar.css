@@ -17,6 +17,7 @@
 
 .navbar .navbar-nav .nav-link {
     opacity: .7;
+    text-align: right;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -31,6 +32,10 @@
     margin: 0 0 0 5px;
     font-weight: bold;
     display: none;
+}
+
+.navbar .navbar-toggler {
+    padding: 0 .25rem;
 }
 
 .navbar .nav-image {
@@ -57,5 +62,21 @@
 
     .navbar .show-collapsed {
         display: unset;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+
+    .navbar .navbar-nav .nav-link {
+        line-height: .8;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .navbar .navbar-nav .nav-link {
+        line-height: .7;
     }
 }
