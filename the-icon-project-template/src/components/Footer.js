@@ -23,10 +23,10 @@ class Footer extends Component {
                   <h6>Pinterest</h6>
                 </div>
                 <div className="form-inline justify-content-center payment-method">
-                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-visa.svg" /></a>
-                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-mastercard.svg" /></a>
-                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-paypal.svg" /></a>
-                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-secure.svg" /><p className="d-inline">Secure connection</p></a>
+                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-visa.svg" alt="" /></a>
+                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-mastercard.svg" alt="" /></a>
+                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-paypal.svg" alt="" /></a>
+                  <a><img htrf="#" src="https://cdn0.iconfinder.com/static/img/footer-secure.svg" alt="" /><p className="d-inline">Secure connection</p></a>
                 </div>
               </div>
             </div>

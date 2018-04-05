@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import IconCard from './IconCard';
-import Clover from '../assets/Clover.svg';
-import Daisy from '../assets/Daisy.svg';
-import Fuchsia from '../assets/Fuchsia.svg';
-import Tulip from '../assets/Tulip.svg';
 import './CustomIconSection.css';
+import IconAPI from '../IconAPI'
 
 class CustomIconSection extends Component {
     render() {
@@ -22,28 +19,20 @@ class CustomIconSection extends Component {
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
                                             <div className="row d-flex justify-content-center">
-                                                <div className="col-lg-3">
-                                                    <IconCard color="blue" src={Daisy} name="Daisy" iconType="Flat" price="2" />
-                                                </div>
-                                                <div className="col-lg-3">
-                                                    <IconCard color="red" src={Fuchsia} name="Fuchsia" iconType="Flat" price="2" />
-                                                </div>
-                                                <div className="col-lg-3">
-                                                    <IconCard color="deeppurple" src={Tulip} name="Tulip" iconType="Flat" price="2" />
-                                                </div>
+                                                {IconAPI.getFirstThree().map(i => (
+                                                    <div key={i.id} className="col-lg-3">
+                                                        <IconCard id={i.id} color={i.color} src={i.src} name={i.name} iconType={i.type} price={i.price} />
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className="carousel-item">
                                             <div className="row d-flex justify-content-center">
-                                                <div className="col-lg-3">
-                                                    <IconCard color="pink" src={Tulip} name="Tulip" iconType="Flat" price="2" />
-                                                </div>
-                                                <div className="col-lg-3">
-                                                    <IconCard color="amber" src={Clover} name="Clover" iconType="Flat" price="2" />
-                                                </div>
-                                                <div className="col-lg-3">
-                                                    <IconCard color="green" src={Fuchsia} name="Fuchsia" iconType="Flat" price="2" />
-                                                </div>
+                                                {IconAPI.getSecondThree().map(i => (
+                                                    <div key={i.id} className="col-lg-3">
+                                                        <IconCard id={i.id} color={i.color} src={i.src} name={i.name} iconType={i.type} price={i.price} />
+                                                    </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>

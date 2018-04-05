@@ -1,0 +1,30 @@
+import Clover from './assets/Clover.svg';
+import Daisy from './assets/Daisy.svg';
+import Fuchsia from './assets/Fuchsia.svg';
+import Tulip from './assets/Tulip.svg';
+
+// A simple data API that will be used to get the data for our
+// components. On a real website, a more robust data fetching
+// solution would be more appropriate.
+const IconAPI = {
+    icons: [
+        { id: 1, name: "Daisy", src: Clover, type: "Flat", price: 2, color: "blue" },
+        { id: 2, name: "Clover", src: Daisy, type: "Flat", price: 2, color: "red" },
+        { id: 3, name: "Fuchsia", src: Fuchsia, type: "Flat", price: 2, color: "deeppurple" },
+        { id: 4, name: "Tulip", src: Tulip, type: "Flat", price: 2, color: "pink" },
+        { id: 5, name: "Forget Me Not", src: Clover, type: "Flat", price: 2, color: "amber" },
+        { id: 6, name: "Lilac", src: Daisy, type: "Flat", price: 2, color: "green" },
+        { id: 7, name: "Periwinkle", src: Fuchsia, type: "Flat", price: 2, color: "red" },
+        { id: 8, name: "House", src: Tulip, type: "Flat", price: 2, color: "amber" },
+        { id: 9, name: "Cactus", src: Clover, type: "Flat", price: 2, color: "blue" }
+    ],
+    all: function () { return this.icons },
+    getFirstThree: function () { return this.icons.filter((icon) => icon.id < 4); },
+    getSecondThree: function () { return this.icons.filter((icon) => icon.id > 6); },
+    get: function (id) {
+        const isIcon = p => p.id === id
+        return this.icons.find(isIcon)
+    }
+}
+
+export default IconAPI
