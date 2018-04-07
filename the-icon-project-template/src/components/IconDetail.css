@@ -49,27 +49,37 @@
     justify-content: center;
 } */
 
-.section .icon-detail .icon-detail-bg .icon-detail-content .icon-size ul li {
+.icon-size ul li {
     display: inline;
 }
 
-.section .icon-detail .icon-detail-bg .icon-detail-content .icon-size ul li a {
+.icon-size ul li a {
     float: none;
-    padding: 0 7px;
+    padding: 5px 10px;
     display: inline-block;
     text-decoration: none;
     border: 2px solid #fff;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.section .icon-detail .icon-detail-bg .icon-detail-content .icon-size ul li:hover a {
+.icon-size ul li a.active {
     border: 2px solid #dbdcdf;
 }
 
-.section .icon-detail .icon-detail-bg .icon-detail-content .icon-size ul li:active a {
+.icon-size ul li:hover a {
+    border: 2px solid #dbdcdf;
+    cursor: pointer;
+}
+
+.icon-size ul li:hover:first-child a {
+    border: 2px solid #fff;
+    cursor: unset;
+}
+
+.icon-size ul li:active a {
     cursor: default;
     border: 2px solid #e0e1e4;
     border-radius: 3px;
@@ -78,10 +88,73 @@
     color: #434445;
 }
 
-.section .icon-detail .icon-detail-bg .icon-detail-content .icon-size ul li a em {
+.icon-size ul li a em {
     font-style: normal;
+    font-size: 11px;
+    vertical-align: text-bottom;
 }
 
-.section .icon-detail .icon-detail-bg .icon-detail-content .icon-prop {
-    text-align: center;
+.custom-icon-size input {
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 14px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    width: 95px;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+}
+
+.custom-icon-size:hover input {
+    border: 2px solid #dbdcdf;
+    width: 130px;
+}
+
+.custom-icon-size input:focus {
+    border: 2px solid #b4b4b4;
+    outline: none;
+    width: 130px;
+}
+
+.custom-icon-size:hover a {
+    border: 2px solid #fff !important;
+}
+
+.custom-icon-size a img {
+    width: 20px;
+    margin-left: -40px;
+    opacity: .5;
+}
+
+.custom-icon-size a img:hover {
+    opacity: 1;
+}
+
+.custom-icon-size a img:active {
+    width: 18px;
+}
+
+.custom-icon-size img:hover {
+    cursor: pointer;
+}
+
+.icon-info .row:first-child {
+    padding: 10vh 0;
+}
+
+.icon-prop h1 {
+    letter-spacing: -0.03em;
+    font-weight: bold;
+}
+
+.icon-button button {
+    margin: 0 5px;
+}
+
+.icon-prev {
+    width: 300px;
+    /* -webkit-transition: width 1s;
+    transition: width 1s; */
 }

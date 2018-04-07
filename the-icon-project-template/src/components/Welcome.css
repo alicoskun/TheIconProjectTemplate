@@ -230,6 +230,10 @@
     animation: fadeItem 1.6s ease-in .6s forwards;
 }
 
+.welcome-item img {
+    width: 30%;
+}
+
 .welcome-wrapper {
     position: relative;
     z-index: 1;
