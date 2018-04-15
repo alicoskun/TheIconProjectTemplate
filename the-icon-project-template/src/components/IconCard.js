@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
+import Star from '../assets/star.svg';
 
 class IconCard extends Component {
     render() {
@@ -14,7 +15,10 @@ class IconCard extends Component {
                         </div>
                         <div className="form-inline">
                             <p className="text-muted"><small>{this.props.iconType}</small></p>
-                            <p className="text-muted ml-auto"><small>Licence</small></p>
+                            <a className="add-favourite ml-auto" href="#">
+                                <img className="" src={Star} width="15" height="15" alt="" />
+                            </a>
+                            {/* <p className="text-muted ml-auto"><small>Licence</small></p> */}
                         </div>
                     </div>
                 </div>

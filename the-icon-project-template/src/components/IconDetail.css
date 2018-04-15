@@ -49,6 +49,16 @@
     justify-content: center;
 } */
 
+.icon-size {
+    width: 100%;
+    background-color: #ffefdf;
+}
+
+.icon-size ul {
+    text-align: center;
+    margin: .3rem 0;
+}
+ 
 .icon-size ul li {
     display: inline;
 }
@@ -58,7 +68,7 @@
     padding: 5px 10px;
     display: inline-block;
     text-decoration: none;
-    border: 2px solid #fff;
+    border: 2px solid #ffefdf;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -66,22 +76,22 @@
 }
 
 .icon-size ul li a.active {
-    border: 2px solid #dbdcdf;
+    border: 2px solid #fff;
 }
 
 .icon-size ul li:hover a {
-    border: 2px solid #dbdcdf;
+    border: 2px solid #fff;
     cursor: pointer;
 }
 
-.icon-size ul li:hover:first-child a {
-    border: 2px solid #fff;
+/* .icon-size ul li:hover:first-child a {
+    border: 2px solid #ffefdf;
     cursor: unset;
-}
+} */
 
 .icon-size ul li:active a {
     cursor: default;
-    border: 2px solid #e0e1e4;
+    border: 2px solid #f3f3f3;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -95,20 +105,20 @@
 }
 
 .custom-icon-size input {
-    border: 2px solid #fff;
+    border: 2px solid #ffefdf;
     padding: 5px 10px;
     margin: 0;
     font-size: 14px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    width: 95px;
-    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s;
+    width: 130px;
+    /* -webkit-transition: width 1s; 
+    transition: width 1s; */
 }
 
 .custom-icon-size:hover input {
-    border: 2px solid #dbdcdf;
+    border: 2px solid #fff;
     width: 130px;
 }
 
@@ -119,12 +129,12 @@
 }
 
 .custom-icon-size:hover a {
-    border: 2px solid #fff !important;
+    border: 2px solid #ffefdf !important;
 }
 
 .custom-icon-size a img {
     width: 20px;
-    margin-left: -40px;
+    margin-left: -60px;
     opacity: .5;
 }
 
@@ -154,7 +164,27 @@
 }
 
 .icon-prev {
-    width: 300px;
-    /* -webkit-transition: width 1s;
-    transition: width 1s; */
+    width: 100%;
+    height: 300px;
+}
+
+.icon-prev img {
+     -webkit-transition: width .5s;
+    transition: width .5s;
+}
+
+.icon-size-overlay h6, .icon-size-overlay span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .icon-info .row:first-child {
+        padding: 5vh 0;
+    }
+
+    .icon-sub-detail {
+        display: none;
+    }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import IconSetCard from './IconSetCard';
 import './IconSetSection.css';
+import IconSetAPI from '../IconSetAPI'
 
 class IconSetSection extends Component {
     render() {
@@ -19,7 +20,10 @@ class IconSetSection extends Component {
                                     <h6 className="font-weight-light text-muted ml-auto"><a href="#">View more</a></h6>
                                 </div>
                                 <div className="sets">
-                                    <IconSetCard color="red" name="Flower" iconType="Flat" price="9" />
+                                    {IconSetAPI.all().map(i => (
+                                        <IconSetCard id={i.id} color={i.color} src={i.src} name={i.name} iconType={i.type} price={i.price} />
+                                    ))}
+                                    {/* <IconSetCard color="red" name="Flower" iconType="Flat" price="9" />
                                     <IconSetCard color="green" name="Flower" iconType="Flat" price="9" />
                                     <IconSetCard color="purple" name="Flower" iconType="Flat" price="9" />
                                     <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" />
@@ -30,7 +34,7 @@ class IconSetSection extends Component {
                                     <IconSetCard color="blue" name="Flower" iconType="Flat" price="9" />
                                     <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" />
                                     <IconSetCard color="deeporange" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" />
+                                    <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" /> */}
                                 </div>
                             </div>
                         </div>
