@@ -99,30 +99,51 @@
     opacity: .8;
 }
 
+@media only screen and (max-width: 1197px) {
+    
+    .icon-sets .iconset-preview .row .col-lg-4 img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .icon-sets .iconset-preview {
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+}
+
 @media only screen and (max-width: 991px) {
+    
+    .icon-sets .iconset-preview .row .col-lg-4 img {
+        width: 90px;
+        height: 90px;
+    }
 
     .icon-sets .sets .card {
-        -webkit-flex: 1 0 36%;
-        -ms-flex: 1 0 36%;
-        flex: 1 0 36%;
+        -webkit-flex: 1 0 46%;
+        -ms-flex: 1 0 46%;
+        flex: 1 0 46%;
     }
 }
 
 @media only screen and (max-width: 767px) {
 
     .icon-sets .iconset-preview a .row:first-child {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     
     .icon-sets .iconset-preview .row .col-lg-4 img {
-        width: 110px;
-        height: 110px;
+        width: 125px;
+        height: 125px;
     }
 
     .icon-sets .sets .card {
         -webkit-flex: 1 0 56%;
         -ms-flex: 1 0 56%;
         flex: 1 0 56%;
+    }
+    
+    .icon-sets .iconset-preview {
+        padding: 2.2rem 2rem 1.5rem 2rem;
     }
 }
 
@@ -141,16 +162,16 @@
     }
 
     .icon-sets .iconset-preview {
-        padding: 1rem 2rem;
+        padding: 2rem 2rem 1rem 2rem;
     }
     
     .icon-sets .iconset-preview a .row:first-child {
-        margin-bottom: 1rem;
+        margin-bottom: 1.3rem;
     }
-
-    .icon-sets .iconset-preview img {
-        height: 50px;
-        width: 50px;
+    
+    .icon-sets .iconset-preview .row .col-lg-4 img {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -168,8 +189,12 @@
         margin: 15px auto 10px auto;
     }
 
-    .icon-sets .iconset-preview img {
-        height: 40px;
-        width: 40px;
+    .icon-sets .iconset-preview {
+        padding: 1.5rem 2rem 1rem 2rem;
+    }
+    
+    .icon-sets .iconset-preview .row .col-lg-4 img {
+        width: 70px;
+        height: 70px;
     }
 }

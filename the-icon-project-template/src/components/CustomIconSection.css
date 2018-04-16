@@ -16,7 +16,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .125);
     background-color: #fff;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
 }
 
 .custom-icons .carousel .carousel-inner {
@@ -41,7 +41,7 @@
 }
 
 .custom-icons .carousel .card .card-img-top {
-    margin: 2.5rem 0 1rem 0;
+    margin: 1.7rem 0 .5rem 0;
 }
 
 .custom-icons .carousel .card .card-body {
@@ -104,7 +104,7 @@
     .custom-icons .carousel .col-lg-3 .card .card-img-top {
         height: 220px;
         width: 220px;
-        margin: 4rem 2rem 2rem 2rem;
+        margin: 3.5rem 2rem 1.7rem 2rem;
     }
 }
 
@@ -115,9 +115,9 @@
     }
 
     .custom-icons .carousel .col-lg-3 .card .card-img-top {
-        height: 90px;
-        width: 90px;
-        margin: 1.5rem 0 .5rem 0;
+        height: 120px;
+        width: 120px;
+        margin: 2rem 0 .5rem 0;
     }
 }
 
@@ -125,5 +125,11 @@
 
     .section.gray {
         padding: 50px 0 60px 0;
+    }
+
+    .custom-icons .carousel .col-lg-3 .card .card-img-top {
+        height: 100px;
+        width: 100px;
+        margin: 2rem 0 .5rem 0;
     }
 }

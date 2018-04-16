@@ -46,58 +46,54 @@ class IconDetail extends Component {
         }
         return (
             <React.Fragment>
-                <section className="section fill">
-                    <div className="icon-detail">
-                        <div className="icon-detail-bg">
-                            <div className="icon-size">
-                                <ul>
-                                    <li><a onClick={(event) => this.setSize(event, 16)}>16 <em>x</em> 16</a></li>
-                                    <li><a onClick={(event) => this.setSize(event, 32)}>32 <em>x</em> 32</a></li>
-                                    <li><a onClick={(event) => this.setSize(event, 64)}>64 <em>x</em> 64</a></li>
-                                    <li><a onClick={(event) => this.setSize(event, 128)}>128 <em>x</em> 128</a></li>
-                                    <li><a onClick={(event) => this.setSize(event, 256)}>256 <em>x</em> 256</a></li>
-                                    <li className="custom-icon-size">
-                                        <input ref="customSizeVal" type="number" onChange={this.onChangeCustomSize} min="16" max="512" placeholder="Custom: 100" />
-                                        <a onClick={this.setSizeCustom}><img src={okButton} /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-8 mx-auto">
-                                        <div className="icon-info">
-                                            <div className="row">
-                                                <div className="icon-prop col-lg-6 text-left d-flex flex-column">
-                                                    <h1>{icon.name}</h1>
-                                                    <h6>By {icon.author}</h6>
-                                                    <div className="mt-auto icon-sub-detail">
-                                                        <h5>{icon.type}</h5>
-                                                        <h6>#{icon.tag.join(', ')}</h6>
-                                                        <h6 className="text-muted">{icon.licence}</h6>
-                                                    </div>
-                                                </div>
-                                                <div className="col-lg-6">
-                                                    <div className="icon-prev d-flex justify-content-center">
-                                                        <img src={icon.src} width={this.state.size} alt="" />
-                                                    </div>
-                                                    <div className="icon-size-overlay text-right text-muted">
-                                                        <h6>size: <span ref="sizeOverlay">300</span>px</h6>
-                                                    </div>
-                                                </div>
+                <div className="content">
+                    <div className="icon-nav">
+                        <ul>
+                            <li><a onClick={(event) => this.setSize(event, 16)}>16 <em>x</em> 16</a></li>
+                            <li><a onClick={(event) => this.setSize(event, 32)}>32 <em>x</em> 32</a></li>
+                            <li><a onClick={(event) => this.setSize(event, 64)}>64 <em>x</em> 64</a></li>
+                            <li><a onClick={(event) => this.setSize(event, 128)}>128 <em>x</em> 128</a></li>
+                            <li><a onClick={(event) => this.setSize(event, 256)}>256 <em>x</em> 256</a></li>
+                            <li className="custom-icon-size">
+                                <input ref="customSizeVal" type="number" onChange={this.onChangeCustomSize} min="16" max="512" placeholder="Custom: 100" />
+                                <a onClick={this.setSizeCustom}><img src={okButton} /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-8 mx-auto">
+                                <div className="icon-info">
+                                    <div className="row">
+                                        <div className="icon-prop col-lg-6 text-left d-flex flex-column">
+                                            <h1>{icon.name}</h1>
+                                            <h6>By {icon.author}</h6>
+                                            <div className="mt-auto icon-sub-detail">
+                                                <h5>{icon.type}</h5>
+                                                <h6>#{icon.tag.join(', ')}</h6>
+                                                <h6 className="text-muted">{icon.licence}</h6>
                                             </div>
-                                            <div className="icon-button row text-center">
-                                                <div className="col-lg-12">
-                                                    <button className="btn btn-success">{`Buy this icon for $${icon.price}`}</button>
-                                                    <button className="btn btn-outline-success">Add to Collection</button>
-                                                </div>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <div className="icon-prev d-flex justify-content-center">
+                                                <img src={icon.src} width={this.state.size} alt="" />
                                             </div>
+                                            <div className="icon-size-overlay text-right text-muted">
+                                                <h6>size: <span ref="sizeOverlay">300</span>px</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="icon-button row text-center">
+                                        <div className="col-lg-12">
+                                            <button className="btn btn-success">{`Buy this icon for $${icon.price}`}</button>
+                                            <button className="btn btn-outline-success">Add to Collection</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
             </React.Fragment>
         )
     }

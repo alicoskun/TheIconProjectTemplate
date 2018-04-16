@@ -1,0 +1,90 @@
+.content {
+    min-height: 95vh;
+}
+
+.icon-set-nav {
+    width: 100%;
+    background-color: #d9ebdd;
+    padding: 5px 15px;
+    margin: 49px 0 1px 0;
+}
+
+.icon-set-nav h4 {
+    margin: 5px 0;
+}
+
+.icons {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex: 1;
+    flex: 1 1;
+}
+
+.icons .card {
+    margin: 0;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    /* -webkit-box-flex: 1;
+    -webkit-flex: 1 0 19%;
+    -ms-flex: 1 0 19%;
+    flex: 1 0 19%; */
+    width: 20%
+}
+
+.icons .card .margin1 { 
+    margin: 1px;
+    background-color: #ffebee !important;
+}
+
+.icons .card .card-img-top {
+    margin: 3rem 0 1rem 0;
+    height: 120px;
+}
+
+.icons .card-body {
+    padding: .25rem .75rem .50rem .75rem;
+}
+
+.icons .card-body p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 1197px) {
+        
+    .icons .card {
+        width: 25%
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .icons .card {
+        width: 33.3%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .icons .card {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .icons .card {
+        width: 100%
+    }
+}

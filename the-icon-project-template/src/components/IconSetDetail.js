@@ -14,21 +14,16 @@ class IconSetDetail extends Component {
         }
         return (
             <React.Fragment>
-                <section className="section fill">
-                    <div className="icon-detail">
-                        <div className="icon-detail-bg">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-lg-10">
-                                        {IconSetAPI.get(iconSet.id).icons.map(i => (
-                                            <IconCard id={i.id} color={i.color} src={i.src} name={i.name} iconType={i.type} price={i.price} />
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div className="content">
+                    <div className="icon-set-nav">
+                        <h4>{iconSet.name}</h4>
                     </div>
-                </section>
+                    <div className="icons">
+                        {IconSetAPI.get(iconSet.id).icons.map(i => (
+                            <IconCard id={i.id} color={i.color} src={i.src} name={i.name} iconType={i.type} price={i.price} />
+                        ))}
+                    </div>
+                </div>
             </React.Fragment>
         )
     }

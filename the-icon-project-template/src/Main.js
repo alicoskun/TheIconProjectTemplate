@@ -5,13 +5,13 @@ import IconDetail from './components/IconDetail';
 import IconSetDetail from './components/IconSetDetail';
 
 const Main = () => (
-    <div>
+    <React.Fragment>
         <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/icon/:id' component={IconDetail}/>
             <Route path='/iconset/:id' component={IconSetDetail}/>
         </Switch>
-    </div>
+    </React.Fragment>
 )
 
 export default Main;

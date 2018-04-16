@@ -23,18 +23,6 @@ class IconSetSection extends Component {
                                     {IconSetAPI.all().map(i => (
                                         <IconSetCard id={i.id} color={i.color} src={i.src} name={i.name} iconType={i.type} price={i.price} />
                                     ))}
-                                    {/* <IconSetCard color="red" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="green" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="purple" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="deeporange" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="pink" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="deeppurple" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="teal" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="blue" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="deeporange" name="Flower" iconType="Flat" price="9" />
-                                    <IconSetCard color="amber" name="Flower" iconType="Flat" price="9" /> */}
                                 </div>
                             </div>
                         </div>
